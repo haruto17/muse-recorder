@@ -6,9 +6,9 @@ def perspective_transform():
     w_ratio = 1.2
 
     p1 = np.array([150,30])
-    p2 = np.array([490,150])
-    p3 = np.array([120,85])
-    p4 = np.array([480,200])
+    p2 = np.array([510,160])
+    p3 = np.array([120,80])
+    p4 = np.array([495,200])
 
     img = cv.imread('b1.png')
 
