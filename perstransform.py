@@ -3,7 +3,7 @@ import numpy as np
 import math
 
 def perspective_transform():
-    w_ratio = 1.1
+    w_ratio = 1.2
 
     p1 = np.array([150,30])
     p2 = np.array([490,150])
@@ -25,4 +25,4 @@ def perspective_transform():
 
     output = cv.warpPerspective(img,M,(o_width,o_height))
 
-    cv.imwrite('b1_after.png',output)
+    cv.imwrite('name.png',output)
