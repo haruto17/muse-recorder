@@ -10,7 +10,7 @@ def perspective_transform():
     p3 = np.array([120,85])
     p4 = np.array([480,200])
 
-    img = cv.imread('a1.png')
+    img = cv.imread('b1.png')
 
     o_width = np.linalg.norm(p2-p1)
     o_width = math.floor(o_width * w_ratio)
