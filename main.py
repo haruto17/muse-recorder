@@ -1,6 +1,5 @@
 import flet as ft
 
-
 def main(page):
     page.title = "Muse-Recorder"
 
@@ -13,7 +12,15 @@ def main(page):
     input_miss = ft.TextField(label="Miss")
 
     def btn_click(e):
+        input_name.value = ""
+        input_achi.value = ""
+        input_combo.value = ""
+        input_perfect.value = ""
+        input_great.value = ""
+        input_pass.value = ""
+        input_miss.value = ""
         page.update()
+        input_name.focus()
 
     page.theme_mode = "dark"
     page.window_width = 300
