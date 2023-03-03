@@ -7,4 +7,4 @@ def img_threshold():
         img = cv.imread("image/" + item)
         img_gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
         ret, img2 = cv.threshold(img_gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
-        cv.imwrite(item,img2)
+        cv.imwrite("image/" + item,img2)
