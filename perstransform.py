@@ -28,13 +28,6 @@ def perspective_transform(input_img_path,output_img_path,ratio,p1,p2,p3,p4):
     cv.imwrite(output_img_path,output)
 
 def pers_transform():
-
-    # all-b1
-    perspective_transform('image/b-1.png','image/all-b1.png',1.2,[170,85],[530,210],[110,265],[495,340])
-
-    # all-b2
-    perspective_transform('image/b-2.png','image/all-b2.png',1.2,[110,160],[385,60],[160,240],[450,150])
-
     # music name
     perspective_transform('image/b-1.png','image/name.png',1.1,[180,80],[535,215],[150,135],[525,250])
 
