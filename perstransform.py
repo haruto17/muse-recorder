@@ -28,17 +28,26 @@ def perspective_transform(input_img_path,output_img_path,ratio,p1,p2,p3,p4):
     cv.imwrite(output_img_path,output)
 
 def pers_transform():
-
-    # all-b1
-    perspective_transform('image/b-1.png','image/all-b1.png',1.2,[170,85],[530,210],[110,265],[495,340])
-
-    # all-b2
-    perspective_transform('image/b-2.png','image/all-b2.png',1.2,[110,160],[385,60],[160,240],[450,150])
-
     # music name
     perspective_transform('image/b-1.png','image/name.png',1.1,[180,80],[535,215],[150,135],[525,250])
 
     # percentage of achievement
-    perspective_transform('image/b-1.png','image/achievement.png',1.2,[190,105],[300,140],[170,140],[285,175])
+    perspective_transform('image/b-1.png','image/achievement.png',1.2,[220,155],[325,190],[200,195],[310,225])
 
-    
+    # max combo
+    perspective_transform('image/b-1.png','image/maxcombo.png',1.2,[460,230],[520,250],[450,265],[505,280])
+
+    # perfect num
+    perspective_transform('image/b-1.png','image/perfect.png',1.2,[208,205],[285,227],[200,240],[270,260])
+
+    # great num
+    perspective_transform('image/b-1.png','image/great.png',1.2,[370,250],[450,270],[360,285],[445,305])
+
+    # pass num
+    perspective_transform('image/b-1.png','image/pass.png',1.2,[170,235],[275,260],[155,265],[260,290])
+
+    # miss num
+    perspective_transform('image/b-1.png','image/miss.png',1.2,[360,280],[430,300],[350,315],[420,330])
+
+    # score
+    perspective_transform('image/b-2.png','image/score.png',1.2,[100,150],[420,30],[150,250],[475,140])

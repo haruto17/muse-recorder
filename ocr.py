@@ -12,9 +12,9 @@ def img_ocr():
     print(tools)
     tool = tools[0]
 
-    img_path = 'image/name.png'
+    img_path = 'image/miss.png'
     img = Image.open(img_path)
     builder = pyocr.builders.TextBuilder(tesseract_layout=6)
-    text = tool.image_to_string(img,lang="jpn",builder=builder)
+    text = tool.image_to_string(img,lang="eng",builder=builder)
 
     print(text)
