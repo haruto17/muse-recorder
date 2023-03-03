@@ -32,6 +32,6 @@ def pers_transform():
     perspective_transform('image/b-1.png','image/name.png',1.1,[180,80],[535,215],[150,135],[525,250])
 
     # percentage of achievement
-    perspective_transform('image/b-1.png','image/achievement.png',1.2,[190,105],[300,140],[170,140],[285,175])
+    perspective_transform('image/b-1.png','image/achievement.png',1.2,[220,155],[325,190],[200,195],[310,225])
 
     
