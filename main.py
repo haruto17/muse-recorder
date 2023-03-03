@@ -1,4 +1,6 @@
 import flet as ft
+import writer
+
 
 def main(page):
     page.title = "Muse-Recorder"
@@ -10,8 +12,19 @@ def main(page):
     input_great = ft.TextField(label="Great")
     input_pass = ft.TextField(label="Pass")
     input_miss = ft.TextField(label="Miss")
+    input_score = ft.TextField(label="Score")
 
     def btn_click(e):
+        data_list = []
+        data_list.append(input_name.value)
+        data_list.append(input_achi.value)
+        data_list.append(input_combo.value)
+        data_list.append(input_perfect.value)
+        data_list.append(input_great.value)
+        data_list.append(input_pass.value)
+        data_list.append(input_miss.value)
+        data_list.append(input_score.value)
+        writer.write_csv(data_list)
         input_name.value = ""
         input_achi.value = ""
         input_combo.value = ""
@@ -19,6 +32,7 @@ def main(page):
         input_great.value = ""
         input_pass.value = ""
         input_miss.value = ""
+        input_score.value = ""
         page.update()
         input_name.focus()
 
@@ -33,7 +47,9 @@ def main(page):
         input_great,
         input_pass,
         input_miss,
+        input_score,
         ft.ElevatedButton("Add", on_click=btn_click),
     )
+
 
 ft.app(target=main)
