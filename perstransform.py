@@ -34,4 +34,5 @@ def pers_transform():
     # percentage of achievement
     perspective_transform('image/b-1.png','image/achievement.png',1.2,[220,155],[325,190],[200,195],[310,225])
 
-    
+    # max combo
+    perspective_transform('image/b-1.png','image/maxcombo.png',1.2,[460,230],[520,250],[450,265],[505,280])
