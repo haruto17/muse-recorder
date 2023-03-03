@@ -11,6 +11,6 @@ if __name__ == '__main__':
     # resize.img_resize()
     # cut.img_cut()
     #threshold.img_threshold()
-    # perstransform.pers_transform()
-    # getpos.getpos()
+    #perstransform.pers_transform()
+    #getpos.getpos()
     ocr.img_ocr()

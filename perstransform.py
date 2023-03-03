@@ -36,3 +36,6 @@ def pers_transform():
 
     # max combo
     perspective_transform('image/b-1.png','image/maxcombo.png',1.2,[460,230],[520,250],[450,265],[505,280])
+
+    # perfect num
+    perspective_transform('image/b-1.png','image/perfect.png',1.2,[208,205],[285,227],[200,240],[270,260])
