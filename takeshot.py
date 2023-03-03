@@ -10,4 +10,4 @@ def takescreenshot():
     width,height=muse.size
 
     sleep(1)
-    screenshot=ag.screenshot('image/a-1.png',region=(x,y,width,height))
+    screenshot=ag.screenshot('image/a6.png',region=(x,y,width,height))

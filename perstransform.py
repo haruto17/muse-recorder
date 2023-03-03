@@ -29,8 +29,16 @@ def perspective_transform(input_img_path,output_img_path,ratio,p1,p2,p3,p4):
 
 def pers_transform():
 
+    # all-b1
+    perspective_transform('image/b-1.png','image/all-b1.png',1.2,[170,85],[530,210],[110,265],[495,340])
+
+    # all-b2
+    perspective_transform('image/b-2.png','image/all-b2.png',1.2,[110,160],[385,60],[160,240],[450,150])
+
     # music name
-    perspective_transform('image/b-1.png','image/name.png',1.2,[150,30],[510,160],[120,80],[495,200])
+    perspective_transform('image/b-1.png','image/name.png',1.1,[180,80],[535,215],[150,135],[525,250])
 
     # percentage of achievement
     perspective_transform('image/b-1.png','image/achievement.png',1.2,[190,105],[300,140],[170,140],[285,175])
+
+    
