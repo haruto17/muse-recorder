@@ -39,3 +39,6 @@ def pers_transform():
 
     # perfect num
     perspective_transform('image/b-1.png','image/perfect.png',1.2,[208,205],[285,227],[200,240],[270,260])
+
+    # great num
+    perspective_transform('image/b-1.png','image/great.png',1.2,[370,250],[450,270],[360,285],[445,305])
