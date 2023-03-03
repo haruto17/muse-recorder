@@ -10,6 +10,7 @@ fieldnames = [
     "Pass",
     "Miss",
     "Score",
+    "Datetime",
 ]
 
 
@@ -29,6 +30,7 @@ def write_csv(data):
                     "Pass": data[5],
                     "Miss": data[6],
                     "Score": data[7],
+                    "Datetime": data[8],
                 }
             )
     else:
@@ -45,5 +47,6 @@ def write_csv(data):
                     "Pass": data[5],
                     "Miss": data[6],
                     "Score": data[7],
+                    "Datetime": data[8],
                 }
             )

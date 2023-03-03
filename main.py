@@ -1,5 +1,6 @@
 import flet as ft
 import writer
+import gettime
 
 
 def main(page):
@@ -24,6 +25,7 @@ def main(page):
         data_list.append(input_pass.value)
         data_list.append(input_miss.value)
         data_list.append(input_score.value)
+        data_list.append(gettime.get_now_time())
         writer.write_csv(data_list)
         input_name.value = ""
         input_achi.value = ""
