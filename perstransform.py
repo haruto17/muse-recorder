@@ -42,3 +42,12 @@ def pers_transform():
 
     # great num
     perspective_transform('image/b-1.png','image/great.png',1.2,[370,250],[450,270],[360,285],[445,305])
+
+    # pass num
+    perspective_transform('image/b-1.png','image/pass.png',1.2,[170,235],[275,260],[155,265],[260,290])
+
+    # miss num
+    perspective_transform('image/b-1.png','image/miss.png',1.2,[360,280],[430,300],[350,315],[420,330])
+
+    # score
+    perspective_transform('image/b-2.png','image/score.png',1.2,[100,150],[420,30],[150,250],[475,140])

@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 def getpos():
-    img = cv.imread('image/b-1.png')
+    img = cv.imread('image/b-2.png')
 
     def click_pos(event,x,y,flags,params):
         if event == cv.EVENT_LBUTTONDOWN:
